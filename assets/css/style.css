@@ -1,8 +1,41 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 40px;
-    line-height: 1.6;
-}
-header h1 {
-    font-size: 2em;
-}
+style.css:
+
+body { margin: 0; font-family: Arial, sans-serif; background: #0d0d0d; color: white; }
+
+/* HEADER */ .header { text-align: center; padding: 20px; }
+
+.logo { width: 160px; }
+
+/* LOGO ANIMATION */ .animated-logo { animation: floatLogo 4s ease-in-out infinite; }
+
+@keyframes floatLogo { 0% { transform: translateY(0px); } 50% { transform: translateY(-10px); } 100% { transform: translateY(0px); } }
+
+/* HERO */ .hero { background: url('../images/hero.jpg') center/cover no-repeat; height: 100vh; display: flex; justify-content: center; align-items: center; text-align: center; }
+
+.hero-content h1 { font-size: 3.5em; margin: 0; }
+
+.hero-content p { font-size: 1.2em; }
+
+.cta { display: inline-block; margin-top: 20px; padding: 12px 30px; background: #ffffff; color: #000; border-radius: 5px; text-decoration: none; font-weight: bold; }
+
+/* PRODUCTS */ .products { padding: 80px 40px; text-align: center; }
+
+.product-grid { display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; }
+
+.product-item { background: #111; padding: 20px; border-radius: 8px; width: 280px; }
+
+.product-item img { width: 100%; border-radius: 6px; }
+
+/* FLAVORS */ .flavors { padding: 80px 40px; text-align: center; }
+
+.flavor-row { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+
+.flavor-card { background: #181818; width: 250px; border-radius: 8px; padding: 20px; }
+
+/* EMAIL BOX */ .email-box { text-align: center; padding: 60px; background: #111; }
+
+.email-box input { padding: 10px; width: 250px; border-radius: 5px; border: none; }
+
+.email-box button { padding: 10px 20px; border: none; background: #ffffff; font-weight: bold; border-radius: 5px; }
+
+/* FOOTER */ footer { text-align: center; padding: 20px; background: #000; color: #666; }
